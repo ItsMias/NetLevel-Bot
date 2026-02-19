@@ -25,6 +25,9 @@ export default new NetLevelBotCommand({
         ],
         dm_permission: false
     },
+    options: {
+        guildOwnerOnly: true
+    },
     callback: async (client, interaction) => {
 
         if (!interaction.guild) return;
